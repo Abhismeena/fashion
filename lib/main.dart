@@ -1,3 +1,4 @@
+import 'package:fashion/views/screens/Payment.dart';
 import 'package:fashion/views/splashScreen/splashScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -41,6 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: SplashScreen(),
+      // Payment()
       // DashbordScreen(),
       // SelectedItemScreen(),
       // WomensTop(),
