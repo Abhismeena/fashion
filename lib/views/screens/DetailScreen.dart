@@ -1,3 +1,4 @@
+import 'package:fashion/views/screens/CheckOut.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
@@ -281,7 +282,12 @@ class DetailScreen extends StatelessWidget {
                           backgroundColor: Color.fromARGB(255, 88, 106, 110),
                           shape: BeveledRectangleBorder(),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Checkout()),
+                          );
+                        },
                         child: const Text(
                           'Add to cart',
                           style: TextStyle(color: Colors.white),

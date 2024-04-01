@@ -61,12 +61,12 @@ class Order extends StatelessWidget {
                 height: 150,
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
                 child: Container(
                   height: 50,
                   width: double.infinity,
                   child: RoundedButton(
-                    btnName: 'Log in',
+                    btnName: 'Continue shopping',
                     callback: () {},
                     textStyle: TextStyle(color: Colors.white),
                   ),

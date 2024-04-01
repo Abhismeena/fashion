@@ -1,4 +1,5 @@
 import 'package:fashion/modal/btn/rounded_btn.dart';
+import 'package:fashion/views/screens/Order.dart';
 import 'package:flutter/material.dart';
 
 class Payment extends StatelessWidget {
@@ -61,22 +62,39 @@ class Payment extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 50,
+            height: 80,
           ),
+          // Padding(
+          //   padding: const EdgeInsets.all(18),
+          //   child: Container(
+          //     height: 50,
+          //     width: double.infinity,
+          //     child: RoundedButton(
+          //       btnName: "Pay \$102.40",
+          //       bgColor: Colors.black,
+          //       callback: () {
+          //         // Navigator.push(
+          //         //   context,
+          //         //   MaterialPageRoute(
+          //         //       builder: (context) => CreateAccount()),
+          //         // );
+          //       },
+          //       textStyle: TextStyle(color: Colors.white),
+          //     ),
+          //   ),
+          // ),
           Padding(
-            padding: const EdgeInsets.all(18),
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
             child: Container(
               height: 50,
               width: double.infinity,
               child: RoundedButton(
                 btnName: "Pay \$102.40",
-                bgColor: Colors.black,
                 callback: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //       builder: (context) => CreateAccount()),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Order()),
+                  );
                 },
                 textStyle: TextStyle(color: Colors.white),
               ),

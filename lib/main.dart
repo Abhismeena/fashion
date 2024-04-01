@@ -1,4 +1,6 @@
+import 'package:fashion/views/screens/CheckOut.dart';
 import 'package:fashion/views/screens/Payment.dart';
+import 'package:fashion/views/screens/Shipping.dart';
 import 'package:fashion/views/splashScreen/splashScreen.dart';
 import 'package:flutter/material.dart';
 
